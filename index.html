@@ -2,9 +2,23 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Video en Vercel</title>
+  <title>Mi Video en Pantalla Completa</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: black;
+      overflow: hidden;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
 </head>
-<body style="margin:0; background:#000;">
-  <video src="mi-video.mp4" autoplay muted loop playsinline style="width:100%; height:auto;"></video>
+<body>
+  <video src="mi-video.mp4" autoplay muted loop playsinline></video>
 </body>
 </html>
